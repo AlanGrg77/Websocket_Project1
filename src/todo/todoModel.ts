@@ -1,7 +1,7 @@
-import { ToDo, Status } from './todoTypes';
+import { IToDo, Status } from './todoTypes';
 import mongoose from "mongoose";
 
-const todoSchema = new mongoose.Schema<ToDo>({
+const todoSchema = new mongoose.Schema<IToDo>({
     text : String,
     deadLine : String,
     status : {
